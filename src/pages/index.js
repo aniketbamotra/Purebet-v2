@@ -1,5 +1,6 @@
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import bgImg from "../images/Ellipse.png";
 import "./index.scss";
 
 const IndexPage = () => {
@@ -19,7 +20,7 @@ const IndexPage = () => {
           className="logo"
         ></StaticImage>
       </header>
-      <StaticImage src="../images/Ellipse.png" className="bg-img"></StaticImage>
+      <img src={bgImg} className="bg-img"></img>
       <div className="hero-text serif">
         A decentralised, non-custodial sports betting exchange and decentralised
         gaming (DeGam) ecosystem.
