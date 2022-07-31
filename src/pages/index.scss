@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: "Cabinet Grotesk 800";
+    src: url(../assets/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Extrabold.otf);
+}
+@font-face {
+    font-family: "Cabinet Grotesk 600";
+    src: url(../assets/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf);
+}
+@font-face {
+    font-family: "Cabinet Grotesk 400";
+    src: url(../assets/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: "Black Pro";
+    src: url(../assets/black-pro-reguler.otf);
+}
+
+*, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(104.46deg, #012E40 0%, #1C342E 45.83%, #A75C00 100%);
+    min-height: 100vh;
+}
+.serif{
+    font-family: "Cabinet Grotesk 800";
+    font-size: 8ch;
+    color: #EDF2F4;
+}
+.sans{
+    font-family: "Black Pro";
+    font-size: 4.5ch;
+    color: #EDF2F4;
+}
+
+.logo{
+    margin: 3.25em 6.25em;
+}
+.bg-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+.hero-text{
+    text-align: center;
+    margin: 1.5em 6.25em;
+    text-transform: uppercase;
+}
+.btn-container{
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: space-evenly;
+}
+.btn{
+    background: linear-gradient(92.63deg, #009DB2 0%, #F28705 100%);
+    box-shadow: 10px 10px 15px rgba(242, 135, 5, 0.35);
+    border: none;
+    padding: .5em 2em;
+    width: 15em;
+    cursor: pointer;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-top: 2em;
+    background: #F28705;
+    box-shadow: 0px -18px 39px #234D65;
+    width: 100%;
+}
+.ft-text{
+    font-family: "Cabinet Grotesk 600";
+    color: #EDF2F4;
+    font-size: 3ch;
+    text-align: center;
+    padding: .5em 0em;
+}
+
+
+@media (max-width: 1700px) {
+    .hero-text{
+        margin: .5em 4.25em;
+    }
+}
+@media (max-width: 1440px) {
+    .hero-text{
+        font-size: 6ch;
+    }
+    .btn{
+        padding: .5em 1em;
+        width: 11em;
+        font-size: 3ch;
+    }
+    .ft-text{
+        font-size: 2ch;
+    }
+}
+@media (max-width: 1024px) {
+    .logo{
+        width: 6em;
+    }
+    .hero-text{
+        font-size: 5ch;
+    }
+}
+@media (max-width: 768px) {
+    .hero-text{
+        font-size: 4ch;
+        margin: .5em 3em;
+    }
+}
+@media (max-width: 425px) {
+    .bg-img{
+        width: 100%;
+    }
+    .logo{
+        margin: 2.25em 2.25em;
+    }
+    .hero-text{
+        margin: 2.5em .5em 1em .5em;
+    }
+    .btn{
+        font-size: 2ch;
+    }
+}
